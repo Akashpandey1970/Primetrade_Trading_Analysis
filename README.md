@@ -1,13 +1,27 @@
-# Hyperliquid Trader Sentiment Analysis
+# 📈 Quantitative Trading Performance Analytics Portal
+### *Hyperliquid DEX Execution Correlation with Crypto Fear & Greed Sentiment*
 
-## 🚀 The Core Discovery (Alpha)
-My analysis reveals a "Contrarian Alpha" pattern. While **Retail Traders** increase leverage during 'Extreme Greed', the **Top 10% of Profitable Traders** actually reduce their size and leverage.
+---
 
-## 📊 Key Findings
-* **The Greed Trap:** Average leverage spikes by 25% during "Extreme Greed" phases, but average PnL drops by 15% due to liquidations.
-* **Fear Opportunity:** Win rates for 'Long' positions are 12% higher during "Extreme Fear" compared to any other phase.
+## 🎯 Project Overview
+This production-ready engineering pipeline evaluates the impact of market psychology on decentralized exchange execution. By correlating over **211,000 live trade logs** from the **Hyperliquid DEX** with historical timelines from the **Crypto Fear & Greed Index**, the application discovers whether extreme crowd emotions present statistically valid trading signals ("Alpha").
 
-## 🛠 Tech Stack
-- **Python/Pandas:** For time-series normalization.
-- **Seaborn:** For dual-axis professional trading visualizations.
-- **Scipy:** For statistical validation of sentiment-based strategies.
+The system is engineered as a modern, decoupled full-stack architecture running a high-performance **FastAPI data engine** linked dynamically to an interactive, responsive, dark-themed HTML/JS terminal front-end dashboard.
+
+---
+
+## 🏗️ System Architecture & Project Structure
+The repository is strictly structured using standard enterprise data science and web development patterns:
+
+```text
+▼ PRIMETRADE_TRADING_ANALYSIS
+  ▶ data/               # Raw underlying Web3 & Sentiment CSV files
+  ▶ notebooks/          # Exploratory Analysis Jupyter Notebook with custom UI cards
+  ▶ output/             # Exported visual analysis assets (Equity curve, distributions)
+  ▼ public/             
+      📄 index.html     # Front-End Terminal Dashboard (Vanilla JS Fetch Streams)
+  ▼ src/                
+      📄 backend_server.py # FastAPI Application Server Gateway
+      📄 data_loader.py    # Robust Data Ingestion & Case-Insensitive Fuzzy Mapping
+      📄 plots.py         # Matplotlib/Seaborn Analytical visualization suites
+  📄 requirements.txt   # Framework package dependency manifest
